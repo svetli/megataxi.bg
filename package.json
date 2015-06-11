@@ -1,0 +1,14 @@
+{
+    "name": "MegaRTaxi",
+    "version": "1.0.0",
+    "description": "MegaR Taxi company website",
+    "author": "Svetli Nikolov",
+    "private": true,
+    "main": "Gruntfile.js",
+    "devDependencies": {
+        "grunt": "~0.4.5",
+        "grunt-browserify": "~3.5.1",
+        "grunt-contrib-compass": "~1.0.1",
+        "grunt-contrib-watch": "~0.6.1"
+    }
+}

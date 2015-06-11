@@ -1,0 +1,23 @@
+[role=navigation] {
+    display: none;
+    width: 250px;
+    height: 100%;
+    position: absolute;
+    font-size: em(14px);
+    overflow: auto;
+    z-index: 1;
+    background-color: $color-white;
+
+    &:focus {
+        outline: 0;
+    }
+
+    .open {
+        display: block;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .fade {
+        display: none;
+    }
+}
