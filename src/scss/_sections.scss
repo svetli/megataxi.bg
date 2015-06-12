@@ -1,0 +1,45 @@
+
+section {
+    &#maps {
+        float: left;
+        width: 100%;
+        height: 785px;
+
+        iframe {
+            width: 100%;
+            height: 885px;
+            margin-top: -100px;
+        }
+
+        .inner {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 785px;
+            z-index: 999;
+        }
+
+        .booking {
+            position: absolute;
+            top: 160px;
+            left: 100px;
+            width: 400px;
+
+            header {
+                height: 50px;
+                background-color: #fdc739;
+                font-size: em(24px);
+                line-height: em(20px);
+                padding-left: 25px;
+            }
+
+            section {
+                background-color: #ffffff;
+            }
+
+            footer {
+                background-color: #ffffff;
+            }
+        }
+    }
+}
