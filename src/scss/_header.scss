@@ -1,72 +1,73 @@
-
 [role=banner] {
-    width: 100%;
-    height: 94px;
+  position: fixed;
+  width: $header-width;
+  background-color: $color-header-background;
+  border-bottom: $header-border-bottom-size solid $color-header-border;
+  overflow: hidden;
+  z-index: $zindex-header;
+
+  h1 {
+    display: table;
+    margin: 0;
+    float: left;
+    background-color: $color-white;
+    padding: $logo-padding;
+
+    a {
+      position: relative;
+      display: block;
+      width: $logo-width;
+      height: $logo-height;
+      text-indent: -9999px;
+      background: url(../images/logo.png);
+    }
+  }
+
+  .apps {
     position: absolute;
-    top: 0;
-    z-index: 15;
-    background-color: rgba(236, 240, 240, 0.8);
-    border-bottom: 6px solid #fdc739;
-    @include box-sizing(border-box);
+    top: 10px;
+    right: 0;
 
-    &:after {
-        clear: both;
-        content: "";
-        display: table;
-    }
+    ul {
+      margin: 0;
 
-    .logo {
-        position: absolute;
-        display: block;
-        width: em(167px);
-        left: 50%;
-        top: 0;
-        z-index: 2;
-        margin: 0 0 0 em(-83.5px);
-    }
-
-    .button-menu {
-        position: relative;
-        min-width: em(120px);
-        height: 100%;
+      li {
         float: left;
-        color: $color-button-bg;
-        text-align: center;
-        z-index: 2;
+        list-style: none;
+        margin-right: 10px;
 
-        span {
-            font-size: em(10px);
-            text-transform: uppercase;
-            vertical-align: middle;
-            padding-left: em(5px);
+        a {
+          position: relative;
+          display: block;
+          width: 178px;
+          height: 60px;
+          text-indent: -9999px;
         }
+      }
 
-        &:before {
-            content: "\e9bd";
-            font-family: icons;
-            font-size: 28px;
-            line-height: 1;
-            speak: none;
-            vertical-align: middle;
+      .googleplay {
+        a {
+          background-image: url(../images/googleplay.png);
         }
+      }
+
+      .appstore {
+        a {
+          background-image: url(../images/appstore.png);
+        }
+      }
     }
+  }
 
-    .phone {
-        position: absolute;
-        right: 0;
-        top: em(30px);
-        white-space: nowrap;
-        display: block;
-        margin-right: em(25px);
-
-        &:before {
-            content: "\e958";
-            font-family: icons;
-            font-size: 28px;
-            line-height: 1;
-            speak: none;
-            vertical-align: middle;
-        }
-    }
+  &:after {
+    @include clearfix;
+  }
 }
 
+@media (max-width: $screen-sm-min) {
+  [role=banner] {
+    .apps {
+      display: none;
+    }
+  }
+}

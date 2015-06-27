@@ -1,8 +1,52 @@
 
-$color-white: #ffffff;
-$color-button-bg: #f57e20;
-$color-button-disabled-bg: #ed5c00;
+$color-white:               #ffffff;
+$color-header-background:   #ececec;
+$color-header-border:       #4c9ed9;
+$color-nav-background:      #fff200;
+$color-nav-text:            #000000;
+$color-nav-text-hover:      #999999;
+$color-column-sep:          #fff200;
+$color-about-bg:            #ffffff;
+$color-services-bg:         #fd7d44;
+$color-contacts-bg:         #bdbdad;
 
-$font-family-icons: FontAwesome;
-$base-font-size: 13px;
+$font-family-icons:         icons;
+$base-font-size:            13px;
 
+$grid-gutter-width:         30px !default;
+
+$screen-xs-min:             480px !default;
+$screen-sm-min:             768px !default;
+$screen-md-min:             992px !default;
+$screen-lg-min:             1200px !default;
+$screen-xs-max:             ($screen-sm-min - 1) !default;
+$screen-sm-max:             ($screen-md-min - 1) !default;
+$screen-md-max:             ($screen-lg-min - 1) !default;
+
+$container-tablet:          (720px + $grid-gutter-width) !default;
+$container-sm:              $container-tablet !default;
+$container-desktop:         (940px + $grid-gutter-width) !default;
+$container-md:              $container-desktop !default;
+$container-large-desktop:   (1140px + $grid-gutter-width) !default;
+$container-lg:              $container-large-desktop !default;
+
+$logo-width:                167px;
+$logo-height:               80px;
+$logo-padding:              20px;
+
+$header-border-bottom-size: 5px;
+$header-width:              100%;
+$header-height:             ($logo-height + ($logo-padding * 2) + $header-border-bottom-size);
+
+$nav-left:                  ($logo-width + ($logo-padding * 2));
+$nav-bottom:                0;
+$nav-width:                 100%;
+$nav-border-top-size:       1px;
+$nav-font-size:             1em;
+$nav-letter-spacing:        .145em;
+$nav-item-padding:          10px;
+
+$zindex-header:             1;
+
+$contacts-map-width:        560px;
+$contacts-map-height:       340px;

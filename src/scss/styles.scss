@@ -1,9 +1,6 @@
 // ----------------------------------------------
 // Compass
 
-@import "compass";
-@import "compass/css3";
-
 // ----------------------------------------------
 // Vars
 
@@ -15,12 +12,15 @@
 
 // ----------------------------------------------
 // Mixins
+@import "mixin";
 
 // ----------------------------------------------
 // Styles
 
 @import "normalize";
+@import "grid";
 @import "global";
 @import "header";
 @import "navigation";
 @import "sections";
+@import "footer";
