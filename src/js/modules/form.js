@@ -1,11 +1,8 @@
-var _           = require('underscore'),
-    bean        = require('bean');
-
 module.exports = function(obj) {
 
     var Form = {
 
-        form: document.querySelector('#contacts'),
+        form: document.querySelector('#contact-form'),
 
         init: function() {
             this.process();
@@ -23,10 +20,10 @@ module.exports = function(obj) {
 
         bind: function() {
             var self = this;
-            bean.on(this.form, 'submit', _.bind(function(e) {
+            $(this.form).bind('submit', function(e) {
                 e.preventDefault();
                 self.validateForm();
-            }));
+            });
         },
 
         validateForm: function() {

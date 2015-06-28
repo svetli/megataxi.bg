@@ -9,8 +9,6 @@
         "grunt": "~0.4.5",
         "grunt-browserify": "~3.5.1",
         "grunt-contrib-compass": "~1.0.1",
-        "grunt-contrib-watch": "~0.6.1",
-        "bean": "~1.0.15",
-        "underscore": "~1.8.3"
+        "grunt-contrib-watch": "~0.6.1"
     }
 }

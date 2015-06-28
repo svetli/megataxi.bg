@@ -42,6 +42,10 @@
       &:last-child a {
         padding-right: 0;
       }
+
+      &.current a {
+        color: $color-white;
+      }
     }
 
     &:after {

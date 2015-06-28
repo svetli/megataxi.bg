@@ -1,5 +1,6 @@
 
 $color-white:               #ffffff;
+$color-black:               #000000;
 $color-header-background:   #ececec;
 $color-header-border:       #4c9ed9;
 $color-nav-background:      #fff200;
@@ -9,11 +10,20 @@ $color-column-sep:          #fff200;
 $color-about-bg:            #ffffff;
 $color-services-bg:         #fd7d44;
 $color-contacts-bg:         #bdbdad;
+$color-text:                #444444;
 
 $font-family-icons:         icons;
 $base-font-size:            13px;
+$large-font-size:           ceil(($base-font-size * 1.25)) !default; // ~16px
+$small-font-size:           ceil(($base-font-size * 0.85)) !default; // ~11px
+$text-indent:               -9999px;
+
+$line-height-base:          1.428571429 !default; // 20/14
+$line-height-computed:      floor(($base-font-size * $line-height-base)) !default;
 
 $grid-gutter-width:         30px !default;
+$padding-base-vertical:     6px !default;
+$padding-base-horizontal:   12px !default;
 
 $screen-xs-min:             480px !default;
 $screen-sm-min:             768px !default;
@@ -46,7 +56,22 @@ $nav-font-size:             1em;
 $nav-letter-spacing:        .145em;
 $nav-item-padding:          10px;
 
+$nav-apps-item-width:       178px;
+$nav-apps-item-height:      60px;
+$nav-apps-margin-right:     10px;
+$nav-apps-top-position:     10px;
+$nav-apps-right-position:   0;
+
+$button-font-weight:        normal;
+$button-color-bg:           #ef672f !default;
+$input-height-base:         ($line-height-computed + ($padding-base-vertical * 2) + 2) !default;
+$input-height-large:        ($input-height-base * 2);
+$input-color:               #7f7f7f !default;
+$input-color-bg:            #d6d6cd !default;
+$input-color-focus-bg:      #e4e4e1 !default;
+$input-color-border:        #cccccc !default;
+
 $zindex-header:             1;
 
-$contacts-map-width:        560px;
-$contacts-map-height:       340px;
+$contacts-map-width:        525px;
+$contacts-map-height:       300px;

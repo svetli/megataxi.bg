@@ -447,55 +447,90 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 48, ../src/scss/_global.scss */
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  min-width: 0;
+}
+/* line 54, ../src/scss/_global.scss */
+fieldset .form-row {
+  padding: 5px 0;
+}
+
+/* line 59, ../src/scss/_global.scss */
+label {
+  display: hidden;
+}
+
+/* line 63, ../src/scss/_global.scss */
 input,
 textarea {
+  display: block;
   width: 100%;
-  height: 60px;
-  padding: 5px 20px 0 20px;
+  height: 32px;
+  padding: 6px 12px;
+  font-size: 13px;
+  line-height: 1.42857;
+  color: #7f7f7f;
   background-color: #d6d6cd;
-  border: none;
-  font-size: 16px;
+  border: 1px solid #cccccc;
+}
+/* line 75, ../src/scss/_global.scss */
+input:focus,
+textarea:focus {
+  background-color: #e4e4e1;
+}
+/* line 79, ../src/scss/_global.scss */
+input.input-large,
+textarea.input-large {
+  font-size: 17px;
+  height: 64px;
 }
 
-/* line 58, ../src/scss/_global.scss */
+/* line 85, ../src/scss/_global.scss */
 textarea {
-  height: 200px;
+  height: auto;
+}
+/* line 87, ../src/scss/_global.scss */
+textarea.input-large {
+  height: auto;
 }
 
-/* line 62, ../src/scss/_global.scss */
+/* line 92, ../src/scss/_global.scss */
 .main {
   min-height: 500px;
   padding-top: 125px;
 }
 
-/* line 67, ../src/scss/_global.scss */
+/* line 97, ../src/scss/_global.scss */
 .button {
   display: inline-block;
-  padding: 8px 12px;
+  width: 100%;
+  margin-bottom: 0;
+  font-weight: normal;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
   color: #ffffff;
   background-color: #ef672f;
-  border: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
 }
-
-/* line 78, ../src/scss/_global.scss */
-.wide {
-  width: 100%;
+/* line 110, ../src/scss/_global.scss */
+.button:active, .button:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
 }
-
-/* line 82, ../src/scss/_global.scss */
-fieldset {
-  border: none;
-}
-/* line 84, ../src/scss/_global.scss */
-fieldset .form-row {
-  padding: 5px 0;
+/* line 117, ../src/scss/_global.scss */
+.button.button-large {
+  font-size: 17px;
+  height: 64px;
 }
 
 @media screen and (min-width: 420px) {
-  /* line 90, ../src/scss/_global.scss */
+  /* line 124, ../src/scss/_global.scss */
   .main {
     min-height: 780px;
   }
@@ -614,7 +649,11 @@ fieldset .form-row {
 [role=navigation] ul li:last-child, [role=navigation] ul li:last-child a {
   padding-right: 0;
 }
-/* line 47, ../src/scss/_navigation.scss */
+/* line 46, ../src/scss/_navigation.scss */
+[role=navigation] ul li.current a {
+  color: #ffffff;
+}
+/* line 51, ../src/scss/_navigation.scss */
 [role=navigation] ul:after {
   content: '';
   display: table;
@@ -642,39 +681,49 @@ section h2 {
 .services {
   background-color: #fd7d44;
 }
+/* line 22, ../src/scss/_sections.scss */
+.services h2 {
+  color: #000000;
+}
 
-/* line 23, ../src/scss/_sections.scss */
+/* line 27, ../src/scss/_sections.scss */
 .contacts {
   background-color: #bdbdad;
 }
-/* line 26, ../src/scss/_sections.scss */
+/* line 30, ../src/scss/_sections.scss */
 .contacts #mapholder {
   display: block;
-  width: 560px;
-  height: 340px;
-  margin-top: 10px;
+  width: 525px;
+  height: 300px;
+  margin-top: 5px;
+}
+@media (max-width: 768px) {
+  /* line 30, ../src/scss/_sections.scss */
+  .contacts #mapholder {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
-  /* line 35, ../src/scss/_sections.scss */
+  /* line 43, ../src/scss/_sections.scss */
   .container {
     padding: 10px 20px;
   }
 }
 @media (min-width: 768px) {
-  /* line 41, ../src/scss/_sections.scss */
+  /* line 49, ../src/scss/_sections.scss */
   .container {
     padding: 20px 20px;
   }
 }
 @media (min-width: 992px) {
-  /* line 47, ../src/scss/_sections.scss */
+  /* line 55, ../src/scss/_sections.scss */
   .container {
     padding: 40px 20px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 53, ../src/scss/_sections.scss */
+  /* line 61, ../src/scss/_sections.scss */
   .container {
     padding: 60px 30px;
   }

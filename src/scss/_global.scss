@@ -45,18 +45,48 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 .2em 0;
 }
 
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  min-width: 0;
+
+  .form-row {
+    padding: 5px 0;
+  }
+}
+
+label {
+  display: hidden;
+}
+
 input,
 textarea {
+  display: block;
   width: 100%;
-  height: 60px;
-  padding: 5px 20px 0 20px;
-  background-color: #d6d6cd;
-  border: none;
-  font-size:16px;
+  height: $input-height-base;
+  padding: $padding-base-vertical $padding-base-horizontal;
+  font-size: $base-font-size;
+  line-height: $line-height-base;
+  color: $input-color;
+  background-color: $input-color-bg;
+  border: 1px solid $input-color-border;
+
+  &:focus {
+    background-color: $input-color-focus-bg;
+  }
+
+  &.input-large {
+    font-size: $large-font-size;
+    height: $input-height-large;
+  }
 }
 
 textarea {
-  height: 200px;
+  height: auto;
+  &.input-large {
+    height: auto;
+  }
 }
 
 .main {
@@ -66,23 +96,27 @@ textarea {
 
 .button {
   display: inline-block;
-  padding: 8px 12px;
+  width: 100%;
+  margin-bottom: 0;
+  font-weight: $button-font-weight;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
   color: $color-white;
-  background-color: #ef672f;
-  border: none;
-}
+  background-color: $button-color-bg;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  
+  &:active,
+  &:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+  }
 
-.wide {
-  width: 100%;
-}
-
-fieldset {
-  border: none;
-  .form-row {
-    padding: 5px 0;
+  &.button-large {
+    font-size: $large-font-size;
+    height: $input-height-large;
   }
 }
 

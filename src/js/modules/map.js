@@ -1,4 +1,3 @@
-
 module.exports = function(obj) {
 
     var map = new google.maps.Map(document.getElementById('mapholder'), {
