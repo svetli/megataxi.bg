@@ -1,25 +1,31 @@
 [role=banner] {
   position: fixed;
   width: $header-width;
+  height: $header-height;
   background-color: $color-header-background;
   border-bottom: $header-border-bottom-size solid $color-header-border;
   overflow: hidden;
   z-index: $zindex-header;
+  background-image: url(../images/headerbg.png);
 
   h1 {
-    display: table;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
     margin: 0;
-    float: left;
-    background-color: $color-white;
-    padding: $logo-padding;
+    z-index: $zindex-logo;
 
     a {
       position: relative;
       display: block;
-      width: $logo-width;
-      height: $logo-height;
-      text-indent: $text-indent;
-      background: url(../images/logo.png);
+      margin-left: -($logo-width/2);
+      background-color: $color-header-background;
+      padding: 0 10px;
+
+      img {
+        width: $logo-width;
+      }
     }
   }
 

@@ -10,6 +10,10 @@ section {
   }
 }
 
+.applications {
+  display: none;
+}
+
 .about-us {
   .about-block {
     text-align: justify;
@@ -42,6 +46,10 @@ section {
 @media (max-width: $screen-xs-max) {
   .container {
     padding: 10px 20px;
+  }
+
+  .applications {
+    display: block;
   }
 }
 

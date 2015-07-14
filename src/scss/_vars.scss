@@ -2,7 +2,7 @@
 $color-white:               #ffffff;
 $color-black:               #000000;
 $color-header-background:   #ececec;
-$color-header-border:       #4c9ed9;
+$color-header-border:       #393185;/*#4c9ed9;*/
 $color-nav-background:      #fff200;
 $color-nav-text:            #000000;
 $color-nav-text-hover:      #999999;
@@ -40,7 +40,7 @@ $container-md:              $container-desktop !default;
 $container-large-desktop:   (1140px + $grid-gutter-width) !default;
 $container-lg:              $container-large-desktop !default;
 
-$logo-width:                167px;
+$logo-width:                360px;
 $logo-height:               80px;
 $logo-padding:              20px;
 
@@ -48,7 +48,7 @@ $header-border-bottom-size: 5px;
 $header-width:              100%;
 $header-height:             ($logo-height + ($logo-padding * 2) + $header-border-bottom-size);
 
-$nav-left:                  ($logo-width + ($logo-padding * 2));
+$nav-left:                  0;/*($logo-width + ($logo-padding * 2));*/
 $nav-bottom:                0;
 $nav-width:                 100%;
 $nav-border-top-size:       1px;
@@ -72,6 +72,8 @@ $input-color-focus-bg:      #e4e4e1 !default;
 $input-color-border:        #cccccc !default;
 
 $zindex-header:             1;
+$zindex-nav:                2;
+$zindex-logo:               3;
 
 $contacts-map-width:        525px;
 $contacts-map-height:       300px;

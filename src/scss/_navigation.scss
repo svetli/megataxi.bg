@@ -6,6 +6,8 @@
   width: $nav-width;
   background-color: $color-nav-background;
   border-top: $nav-border-top-size solid $color-white;
+  z-index: $zindex-nav;
+  height: 44px;
 
   ul {
     padding: 0;
@@ -50,6 +52,14 @@
 
     &:after {
       @include clearfix;
+    }
+  }
+}
+
+@media (max-width: $screen-sm-min) {
+  [role=navigation] {
+    ul {
+      display: none;
     }
   }
 }
