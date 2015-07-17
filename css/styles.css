@@ -500,12 +500,19 @@ textarea.input-large {
 }
 
 /* line 92, ../src/scss/_global.scss */
+.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 98, ../src/scss/_global.scss */
 .main {
   min-height: 500px;
   padding-top: 125px;
 }
 
-/* line 97, ../src/scss/_global.scss */
+/* line 103, ../src/scss/_global.scss */
 .button {
   display: inline-block;
   width: 100%;
@@ -519,20 +526,20 @@ textarea.input-large {
   border: 1px solid transparent;
   white-space: nowrap;
 }
-/* line 110, ../src/scss/_global.scss */
+/* line 116, ../src/scss/_global.scss */
 .button:active, .button:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-/* line 117, ../src/scss/_global.scss */
+/* line 123, ../src/scss/_global.scss */
 .button.button-large {
   font-size: 17px;
   height: 64px;
 }
 
 @media screen and (min-width: 420px) {
-  /* line 124, ../src/scss/_global.scss */
+  /* line 130, ../src/scss/_global.scss */
   .main {
     min-height: 780px;
   }
@@ -563,29 +570,28 @@ textarea.input-large {
   display: block;
   margin-left: -180px;
   background-color: #ececec;
-  padding: 0 10px;
 }
-/* line 26, ../src/scss/_header.scss */
+/* line 25, ../src/scss/_header.scss */
 [role=banner] h1 a img {
   width: 360px;
 }
-/* line 32, ../src/scss/_header.scss */
+/* line 31, ../src/scss/_header.scss */
 [role=banner] .apps {
   position: absolute;
   top: 10px;
   right: 0;
 }
-/* line 37, ../src/scss/_header.scss */
+/* line 36, ../src/scss/_header.scss */
 [role=banner] .apps ul {
   margin: 0;
 }
-/* line 40, ../src/scss/_header.scss */
+/* line 39, ../src/scss/_header.scss */
 [role=banner] .apps ul li {
   float: left;
   list-style: none;
   margin-right: 10px;
 }
-/* line 45, ../src/scss/_header.scss */
+/* line 44, ../src/scss/_header.scss */
 [role=banner] .apps ul li a {
   position: relative;
   display: block;
@@ -593,15 +599,15 @@ textarea.input-large {
   height: 60px;
   text-indent: -9999px;
 }
-/* line 55, ../src/scss/_header.scss */
+/* line 54, ../src/scss/_header.scss */
 [role=banner] .apps ul .googleplay a {
   background-image: url(../images/googleplay.png);
 }
-/* line 61, ../src/scss/_header.scss */
+/* line 60, ../src/scss/_header.scss */
 [role=banner] .apps ul .appstore a {
   background-image: url(../images/appstore.png);
 }
-/* line 68, ../src/scss/_header.scss */
+/* line 67, ../src/scss/_header.scss */
 [role=banner]:after {
   content: '';
   display: table;
@@ -609,7 +615,7 @@ textarea.input-large {
 }
 
 @media (max-width: 768px) {
-  /* line 75, ../src/scss/_header.scss */
+  /* line 74, ../src/scss/_header.scss */
   [role=banner] .apps {
     display: none;
   }
@@ -725,31 +731,56 @@ section h2 {
   }
 }
 
+/* line 47, ../src/scss/_sections.scss */
+.phones .container {
+  padding-bottom: 0;
+}
+/* line 50, ../src/scss/_sections.scss */
+.phones .container .phone img {
+  width: 300px;
+  margin-bottom: 5px;
+}
+
 @media (max-width: 767px) {
-  /* line 47, ../src/scss/_sections.scss */
+  /* line 59, ../src/scss/_sections.scss */
   .container {
     padding: 10px 20px;
   }
 
-  /* line 51, ../src/scss/_sections.scss */
+  /* line 63, ../src/scss/_sections.scss */
   .applications {
     display: block;
   }
+
+  /* line 70, ../src/scss/_sections.scss */
+  .phones .container .phone img {
+    width: 230.76923px;
+  }
 }
 @media (min-width: 768px) {
-  /* line 57, ../src/scss/_sections.scss */
+  /* line 79, ../src/scss/_sections.scss */
   .container {
     padding: 20px 20px;
   }
+
+  /* line 86, ../src/scss/_sections.scss */
+  .phones .container .phone img {
+    width: 230.76923px;
+  }
 }
 @media (min-width: 992px) {
-  /* line 63, ../src/scss/_sections.scss */
+  /* line 95, ../src/scss/_sections.scss */
   .container {
     padding: 40px 20px;
   }
+
+  /* line 102, ../src/scss/_sections.scss */
+  .phones .container .phone img {
+    width: 300px;
+  }
 }
 @media (min-width: 1200px) {
-  /* line 69, ../src/scss/_sections.scss */
+  /* line 111, ../src/scss/_sections.scss */
   .container {
     padding: 60px 30px;
   }

@@ -43,6 +43,18 @@ section {
   }
 }
 
+.phones {
+  .container {
+    padding-bottom: 0;
+    .phone {
+      img {
+        width: $phone-width;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
 @media (max-width: $screen-xs-max) {
   .container {
     padding: 10px 20px;
@@ -51,17 +63,47 @@ section {
   .applications {
     display: block;
   }
+
+  .phones {
+    .container {
+      .phone {
+        img {
+          width: $phone-width/1.3;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: $screen-sm-min) {
   .container {
     padding: 20px 20px;
   }
+
+  .phones {
+    .container {
+      .phone {
+        img {
+          width: $phone-width/1.3;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: $screen-md-min) {
   .container {
     padding: 40px 20px;
+  }
+
+  .phones {
+    .container {
+      .phone {
+        img {
+          width: $phone-width/1;
+        }
+      }
+    }
   }
 }
 
